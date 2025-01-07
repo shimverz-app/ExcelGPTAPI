@@ -5,7 +5,7 @@
  * @returns {Promise<string>} ChatGPT 응답
  * @customfunction
  */
-async function CHATGPT_ASK(question, apiKey) {
+async function GPT(question, apiKey) {
     const url = "https://api.openai.com/v1/chat/completions";
 
     const payload = {
