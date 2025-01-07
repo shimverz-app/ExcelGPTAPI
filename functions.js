@@ -1,5 +1,5 @@
 /**
- * ChatGPT에게 질문을 보내고 응답을 받는 사용자 함수
+ * ChatGPT API를 호출하는 엑셀 사용자 함수
  * @customfunction
  * @param {string} question 사용자의 질문
  * @param {string} apiKey OpenAI API 키
