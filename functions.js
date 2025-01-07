@@ -7,10 +7,10 @@
  */
 async function GPT(question, apiKey) {
     if (!question) {
-        return "❌ 질문을 입력하세요.";
+        return "질문을 입력하세요.";
     }
     if (!apiKey) {
-        return "❌ API 키가 필요합니다.";
+        return "API 키가 필요합니다.";
     }
 
     try {
@@ -31,6 +31,6 @@ async function GPT(question, apiKey) {
         let data = await response.json();
         return data.choices[0].message.content;
     } catch (error) {
-        return "❌ 오류 발생: " + error.message;
+        return "오류 발생: " + error.message;
     }
 }
