@@ -1,27 +1,25 @@
 {
-  "functions": [
-    {
-      "id": "GPT",
-      "name": "GPT",
-      "description": "ChatGPT API를 호출하여 질문에 대한 응답을 반환합니다.",
-      "parameters": [
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
         {
-          "name": "question",
-          "description": "GPT에게 보낼 질문",
-          "type": "string",
-          "optional": false
-        },
-        {
-          "name": "apiKey",
-          "description": "사용자의 OpenAI API 키",
-          "type": "string",
-          "optional": false
+            "description": "Excel 사용자 지정 함수: OpenAI API 호출",
+            "id": "CHATGPT_ASK",
+            "name": "CHATGPT_ASK",
+            "parameters": [
+                {
+                    "description": "사용자 질문",
+                    "name": "question",
+                    "type": "string"
+                },
+                {
+                    "description": "OpenAI API 키",
+                    "name": "apiKey",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
         }
-      ],
-      "result": {
-        "type": "string",
-        "dimension": "scalar"
-      }
-    }
-  ]
+    ]
 }
