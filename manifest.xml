@@ -3,8 +3,8 @@
   <Id>c7263127-4243-4f35-995f-41ecef03fbd1</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>GPT</ProviderName>
-  <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="DD"/>
+  <DefaultLocale>ko-KR</DefaultLocale>
+  <DisplayName DefaultValue="GPT"/>
   <Description DefaultValue="Write your own Excel functions in JavaScript."/>
   <IconUrl DefaultValue="https://shimverz-app.github.io/ExcelGPTAPI/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://shimverz-app.github.io/ExcelGPTAPI/assets/icon-64.png"/>
@@ -95,10 +95,10 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://shimverz-app.github.io/ExcelGPTAPI/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="Functions.Namespace" DefaultValue="CONTOSO"/>
+        <bt:String id="Functions.Namespace" DefaultValue="OPENAI"/>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="AA"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="GG"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="OPENAI"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="ChatGPT"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started."/>
