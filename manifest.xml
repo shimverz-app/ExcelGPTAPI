@@ -9,7 +9,7 @@
         <Host Name="Workbook"/>
     </Hosts>
     <DefaultSettings>
-        <SourceLocation DefaultValue="file:///C:/ExcelGPT-Addin/functions.json"/>
+        <SourceLocation DefaultValue="https://shimverz-app.github.io/ExcelGPTAPI/functions.json"/>
     </DefaultSettings>
     <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>
