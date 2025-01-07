@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:type="CustomFunctions">
-    <Id>your-addin-id</Id>
+    <Id>com.yourname.gptaddin</Id>
     <Version>1.0</Version>
     <ProviderName>Your Name</ProviderName>
     <DefaultLocale>en-US</DefaultLocale>
     <Hosts>
         <Host Name="Workbook"/>
     </Hosts>
-    <DefaultSettings>
-        <SourceLocation DefaultValue="https://shimverz-app.github.io/ExcelGPTAPI/functions.json"/>
-    </DefaultSettings>
-    <Permissions>ReadWriteDocument</Permissions>
+    <VersionOverrides xsi:type="VersionOverridesV1_0">
+        <Hosts>
+            <Host xsi:type="Workbook">
+                <AllFormFactors>
+                    <ExtensionPoint xsi:type="CustomFunctions">
+                        <Script>
+                            https://shimverz-app.github.io/ExcelGPTAPI/functions.js
+                        </Script>
+                        <Metadata>
+                            https://shimverz-app.github.io/ExcelGPTAPI/functions.json
+                        </Metadata>
+                    </ExtensionPoint>
+                </AllFormFactors>
+            </Host>
+        </Hosts>
+    </VersionOverrides>
 </OfficeApp>
