@@ -1,0 +1,27 @@
+{
+  "functions": [
+    {
+      "id": "GPT",
+      "name": "GPT",
+      "description": "ChatGPT API를 호출하여 질문에 대한 응답을 반환합니다.",
+      "parameters": [
+        {
+          "name": "question",
+          "description": "GPT에게 보낼 질문",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "apiKey",
+          "description": "사용자의 OpenAI API 키",
+          "type": "string",
+          "optional": false
+        }
+      ],
+      "result": {
+        "type": "string",
+        "dimension": "scalar"
+      }
+    }
+  ]
+}
